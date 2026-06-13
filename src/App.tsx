@@ -428,7 +428,7 @@ function App() {
                   заказы, затем цена пилота.
                 </p>
               </div>
-              <Button asChild variant="secondary" size="lg">
+              <Button asChild variant="secondary" size="lg" className="bg-background text-foreground hover:bg-background/90">
                 <a href="#demo">
                   Сценарий demo
                   <LineChart data-icon="inline-end" />
