@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  color-scheme: light;
+  --radius: 0.5rem;
+  --background: #fffdf7;
+  --foreground: #17221d;
+  --card: #ffffff;
+  --card-foreground: #17221d;
+  --primary: #2f7a4f;
+  --primary-foreground: #ffffff;
+  --secondary: #f3f2e6;
+  --secondary-foreground: #17221d;
+  --muted: #f6f4eb;
+  --muted-foreground: #65726a;
+  --accent: #f2b84b;
+  --accent-foreground: #17221d;
+  --border: #e4decf;
+  --input: #e4decf;
+  --ring: #2f7a4f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--background);
+  color: var(--foreground);
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+}
+
+h1,
+h2,
+h3,
+p,
+a,
+button,
+span,
+li {
+  overflow-wrap: anywhere;
+}
