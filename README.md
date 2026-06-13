@@ -8,6 +8,15 @@ Public page:
 https://egoriklok.github.io/caloristika-b2b-crm-demo/
 ```
 
+Render static-site deploy:
+
+```text
+https://render.com/deploy?repo=https%3A%2F%2Fgithub.com%2Fegoriklok%2Fcaloristika-b2b-crm-demo
+```
+
+The Render Blueprint uses `VITE_BASE_PATH=/`, so the same Vite app works both
+on GitHub Pages under `/caloristika-b2b-crm-demo/` and on a Render root domain.
+
 ## What This Demo Sells
 
 Not a generic CRM. The offer is a sales intelligence and lead-to-pilot CRM for B2B ready-to-eat food suppliers:
@@ -45,6 +54,12 @@ npm run dev
 
 ```bash
 npm run verify
+```
+
+Render build uses the same command:
+
+```bash
+npm ci && npm run build
 ```
 
 ## Source Safety
